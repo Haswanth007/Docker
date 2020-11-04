@@ -11,6 +11,5 @@ node(label:'Docker_Machine'){
         sh "sudo docker login -u hassy0071 -p ${Docker_key}"
      }
      sh 'sudo docker push hassy0071/my-image:$BUILD_NUMBER'
-   }
-   
+   } 
 }
